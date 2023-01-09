@@ -202,7 +202,7 @@ where the double overdot represents two differentiations.
 
 <div align="cneter">
 
-![5aec9c0a9a296f5b5afca91a1ad8ac20.png](../_resources/5aec9c0a9a296f5b5afca91a1ad8ac20-1.png)
+![[5aec9c0a9a296f5b5afca91a1ad8ac20.png](https://raw.githubusercontent.com/James-C-Hunt/MissileGuidance_ImageHostingService/main/Chapter1/%E5%9B%BE1_1_%E4%BA%8C%E9%98%B6%E7%B3%BB%E7%BB%9F%E6%A1%86%E5%9B%BE.png)](图.1.1 二阶系统框图)
 
 Fig. 1.1 Block diagram representation of second-order system.
 图.1.1 二阶系统框图
@@ -304,14 +304,14 @@ disp 'simulation finished'
 
 <div align="center">
 
-![b5be665b112f8d6e6236366713e9c884.png](../_resources/b5be665b112f8d6e6236366713e9c884-1.png)
+![[b5be665b112f8d6e6236366713e9c884.png](https://raw.githubusercontent.com/James-C-Hunt/MissileGuidance_ImageHostingService/main/Chapter1/%E5%9B%BE1_2_%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E6%95%B0%E5%80%BC%E7%A7%AF%E5%88%86%E7%9A%84%E8%A7%A3%E4%B8%8E%E9%97%AD%E5%BC%8F%E8%A7%A3.png)](图.1.2 微分方程数值积分的解与闭式解)
 
 Fig. 1.2 Numerically integrating differential equations yields same results as closed-form solution.
 图.1.2 微分方程数值积分的解与闭式解
 
 </div>
 
-> > 译者注：上文说明了数值积分方法的合理性和准确性。从图中可以看出，采用二阶Runge–Kutta数值积分法得到的微分方程的解与理论推导所得解高度吻合，因此二阶Runge–Kutta数值积分方法可以用于微分方程组的求解。
+> 译者注：上文说明了数值积分方法的合理性和准确性。从图中可以看出，采用二阶Runge–Kutta数值积分法得到的微分方程的解与理论推导所得解高度吻合，因此二阶Runge–Kutta数值积分方法可以用于微分方程组的求解。
 
 # Z TRANSFORMS AND DIFFERENCE EQUATIONS z-变换和差分方程
 
@@ -487,7 +487,7 @@ save datfil output -ascii
 disp 'simulation finished'
 ```
 
-![6ac8439950ee437fad2d1dc099957dc0.png](../_resources/6ac8439950ee437fad2d1dc099957dc0-1.png)
+![https://raw.githubusercontent.com/James-C-Hunt/MissileGuidance_ImageHostingService/main/Chapter1/%E5%9B%BE1_3_%E5%B7%AE%E5%88%86%E6%96%B9%E7%A8%8B%E4%BB%BF%E7%9C%9F%E7%BB%93%E6%9E%9C%E4%B8%8E%E9%97%AD%E5%BC%8F%E8%A7%A3%E5%AE%8C%E5%85%A8%E5%90%BB%E5%90%88.png](图.1.3 差分方程仿真结果与闭式解完全吻合)
 
 <div align="center">Fig. 1.3 Difference equation simulations results agree with closed-form solution.
 

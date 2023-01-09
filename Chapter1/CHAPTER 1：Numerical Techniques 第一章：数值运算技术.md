@@ -491,7 +491,7 @@ disp 'simulation finished'
 
 <div align="center">
  
-<img scr = "https://raw.githubusercontent.com/James-C-Hunt/MissileGuidance_ImageHostingService/main/Chapter1/%E5%9B%BE1_3_%E5%B7%AE%E5%88%86%E6%96%B9%E7%A8%8B%E4%BB%BF%E7%9C%9F%E7%BB%93%E6%9E%9C%E4%B8%8E%E9%97%AD%E5%BC%8F%E8%A7%A3%E5%AE%8C%E5%85%A8%E5%90%BB%E5%90%88.png"> 
+<img src = "https://raw.githubusercontent.com/James-C-Hunt/MissileGuidance_ImageHostingService/main/Chapter1/%E5%9B%BE1_3_%E5%B7%AE%E5%88%86%E6%96%B9%E7%A8%8B%E4%BB%BF%E7%9C%9F%E7%BB%93%E6%9E%9C%E4%B8%8E%E9%97%AD%E5%BC%8F%E8%A7%A3%E5%AE%8C%E5%85%A8%E5%90%BB%E5%90%88.png"> 
  
 Fig. 1.3 Difference equation simulations results agree with closed-form solution.
 

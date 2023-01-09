@@ -202,7 +202,7 @@ where the double overdot represents two differentiations.
 
 <div align="cneter">
 
-![[5aec9c0a9a296f5b5afca91a1ad8ac20.png](https://raw.githubusercontent.com/James-C-Hunt/MissileGuidance_ImageHostingService/main/Chapter1/%E5%9B%BE1_1_%E4%BA%8C%E9%98%B6%E7%B3%BB%E7%BB%9F%E6%A1%86%E5%9B%BE.png)](图.1.1 二阶系统框图)
+![https://raw.githubusercontent.com/James-C-Hunt/MissileGuidance_ImageHostingService/main/Chapter1/%E5%9B%BE1_1_%E4%BA%8C%E9%98%B6%E7%B3%BB%E7%BB%9F%E6%A1%86%E5%9B%BE.png](https://raw.githubusercontent.com/James-C-Hunt/MissileGuidance_ImageHostingService/main/Chapter1/%E5%9B%BE1_1_%E4%BA%8C%E9%98%B6%E7%B3%BB%E7%BB%9F%E6%A1%86%E5%9B%BE.png)
 
 Fig. 1.1 Block diagram representation of second-order system.
 图.1.1 二阶系统框图

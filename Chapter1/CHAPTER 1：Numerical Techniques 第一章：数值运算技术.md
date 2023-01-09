@@ -10,7 +10,7 @@ If we define F(s) as the Laplace transform of f(t), then the Laplace transform h
 拉普拉斯变换方法具有很高的实用性。对于某个确定的运算在不同域中的操作是不同的，而且通常情况下选择在某个域中完成这个运算会更加简便。例如，`时域`中的`常微分方程`经过拉普拉斯变换后，变为了`s域`中的`代数方程`。在控制系统工程中，拉普拉斯变换既被用作速记符号，也被用作求解线性微分方程的方法。在本书中，我们将频繁使用拉普拉斯变换表示法来描述战术导弹制导系统中各子系统的动力学。
 如果我们将`F(s)`定义为`f(t)`的拉普拉斯变换，则拉普拉斯变换具有以下定义
 
-$$F(s) = \int_{0}^{\infin} f(t) e^{-st}dt$$
+$$F(s) = \int_{0}^{\infty} f(t) e^{-st}dt$$
 
 With this definition it is easy to show that a summation in the time domain is also a summation in the Laplace transform or frequency domain. For example, if $f _1 (t)$and$f_2 (t)$have Laplace transforms $F_1 (s)$and $F_2 (s)$, respectively, then
 根据上述定义可以很轻易的得知，时域中多项之和的拉普拉斯变换等于时域中各项拉普拉斯变化结果之和。比如，如果$f _1 (t)$和$f_2 (t)的拉普拉斯变化分别为 $F_1(s)$ 和 $F_2 (s)$，则：

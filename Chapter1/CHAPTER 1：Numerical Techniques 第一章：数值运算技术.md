@@ -10,19 +10,12 @@ If we define F(s) as the Laplace transform of f(t), then the Laplace transform h
 拉普拉斯变换方法具有很高的实用性。对于某个确定的运算在不同域中的操作是不同的，而且通常情况下选择在某个域中完成这个运算会更加简便。例如，`时域`中的`常微分方程`经过拉普拉斯变换后，变为了`s域`中的`代数方程`。在控制系统工程中，拉普拉斯变换既被用作速记符号，也被用作求解线性微分方程的方法。在本书中，我们将频繁使用拉普拉斯变换表示法来描述战术导弹制导系统中各子系统的动力学。
 如果我们将`F(s)`定义为`f(t)`的拉普拉斯变换，则拉普拉斯变换具有以下定义
 
-$$
-F(s) = \int_{0}^{\infin} f(t) e^{-st}dt
-
-
-$$
+$$F(s) = \int_{0}^{\infin} f(t) e^{-st}dt$$
 
 With this definition it is easy to show that a summation in the time domain is also a summation in the Laplace transform or frequency domain. For example, if $f _1 (t)$and$f_2 (t)$have Laplace transforms $F_1 (s)$and $F_2 (s)$, respectively, then
 根据上述定义可以很轻易的得知，时域中多项之和的拉普拉斯变换等于时域中各项拉普拉斯变化结果之和。比如，如果$f _1 (t)$和$f_2 (t)的拉普拉斯变化分别为 $F_1(s)$ 和 $F_2 (s)$，则：
 
-$$
-\mathscr{L}[f_1(t) \pm f_2(t)] = F_1(s) \pm F_2(s)
-
-$$
+$$\mathscr{L}[f_1(t) \pm f_2(t)] = F_1(s) \pm F_2(s)$$
 
 > 译者注：拉普拉斯变换，简称为“拉式变换”
 > 译者注：和 的 拉氏变换 = 拉氏变换 的 和。
@@ -30,18 +23,12 @@ $$
 Again, using the definition of the Laplace transform, it is easy to show that differentiation in the time domain is equivalent to frequency multiplication in the Laplace transform domain, or
 继续根据拉普拉斯变换的定义可以的得知，时域中的求导运算，等价于拉普拉斯域中的乘法运算。或：
 
-$$
-\mathscr{L}(\frac{df(t)}{dt}) = sF(s) - f(0)
-
-$$
+$$\mathscr{L}(\frac{df(t)}{dt}) = sF(s) - f(0)$$
 
 where f(0) is the initial condition on f(t). The Laplace transform of the $n^{th}$ derivative of a function is given by
 其中 f(0) 是 f(t) 的初始值。 函数的n阶导数的拉普拉斯变换由下式给出：
 
-$$
-\mathscr{L}(\frac{d^{n}f(t)}{dt^{n}}) = s^{n}F(s) -s^{n-1} f(0)-s^{n-2} \frac{df(0)}{dt} - ...
-
-$$
+$$\mathscr{L}(\frac{d^{n}f(t)}{dt^{n}}) = s^{n}F(s) -s^{n-1} f(0)-s^{n-2} \frac{df(0)}{dt} - ...$$
 
 From the preceding equation we can see that, for zero initial conditions, the n^{th} derivative in the time domain is equivalent to a multiplication by s n in the Laplace transform domain.
 从上述公式可以看出，对于`零初始状态`，时域中的n阶求导运算，等价于拉普拉斯域中与s的n此乘法运算。
@@ -52,25 +39,18 @@ From the preceding equation we can see that, for zero initial conditions, the n^
 Laplace transforms can also be used to convert the input-output relationship of a differential equation to a shorthand notation called a ***transfer function representation***. For example, given the second-order equation
 拉普拉斯变换也可用做将微分方程的输入-输出关系转化为一种叫做***传递函数*** 的速记符号，比如对于二阶微分方程。
 
-$$
-\frac{d^2y(t)}{dt^2} + 2\frac{dy(t)}{dt} + 4y(t) = x(t) 
-
-$$
+$$\frac{d^2y(t)}{dt^2} + 2\frac{dy(t)}{dt} + 4y(t) = x(t) $$
 
 with zero initial conditions, or
 满足零初始状态条件，或
 
-$$
-\frac{dy(0)}{dt} = 0 \quad,\quad  y(0) = 0 
-
-$$
+$$\frac{dy(0)}{dt} = 0 \quad,\quad  y(0) = 0$$
 
 we can find the same differential equation in the Laplace transform domain to be
 我们可以在复数域中找到该微分方程的等价表达式。
 
 $$
 s^2Y(s) + 2sY(s) + 4Y(s) = X(s) 
-
 $$
 
 Combining like terms in the preceding equation to get a fractional relationship between the output and input, known as a ***transfer function***, yields
@@ -78,7 +58,6 @@ Combining like terms in the preceding equation to get a fractional relationship 
 
 $$
 \frac{Y(s)}{X(s)} = \frac{1}{s^2 +2s +4} 
-
 $$
 
 Similarly, given a transfer function, we can go back to the differential equation form. Consider the second-order transfer function
@@ -86,7 +65,6 @@ Similarly, given a transfer function, we can go back to the differential equatio
 
 $$
 \frac{Y(s)}{X(s)} = \frac{1 + 2s}{1 + 2s + s^2} 
-
 $$
 
 We know that , according to the chain rule , the transfer function can be expressed as
@@ -94,7 +72,6 @@ We know that , according to the chain rule , the transfer function can be expres
 
 $$
 \frac{Y(s)}{X(s)} = \frac{E(s)}{X(s)}\frac{Y(s)}{E(s)}
-
 $$
 
 Therefore, we can break the relationship into the following two equivalent transfer functions:
@@ -102,7 +79,6 @@ Therefore, we can break the relationship into the following two equivalent trans
 
 $$
 \frac{E(s)}{X(s)}= \frac{1}{1 + 2s + s^2}\quad,\quad\frac{Y(s)}{E(s)}= 1+ 2s
-
 $$
 
 Cross multiplication results in
@@ -110,7 +86,6 @@ Cross multiplication results in
 
 $$
 s^2E(s) + 2sE(s) + E(s) = X(s)
-
 $$
 
 and
@@ -118,7 +93,6 @@ and
 
 $$
 2sE(s) + E(s) =Y(s)
-
 $$
 
 Converting the first equation to the time domain yields the second-order differential equation
@@ -126,7 +100,6 @@ Converting the first equation to the time domain yields the second-order differe
 
 $$
 \frac{d^2e(t)}{dt^2} + 2\frac{de(t)}{dt}+e(t) = x(t) 
-
 $$
 
 and converting the second equation yields the output relationship
@@ -134,7 +107,6 @@ and converting the second equation yields the output relationship
 
 $$
 y(t) = 2\frac{de(t)}{dt}  + e(t)
-
 $$
 
 The implication from the transfer function notation is that the initial conditions on the second-order differential equation are zero, or
@@ -142,7 +114,6 @@ The implication from the transfer function notation is that the initial conditio
 
 $$
 \frac{de(0)}{dt} = 0\quad,\quad e(0)=0
-
 $$
 
 Often we will use Laplace transform notation and, for shorthand, drop the functional dependence on s in the notation \[that is, F is equivalent to F(s)\]. Similarly, when we are in the time domain, the functional dependence on t will often be dropped \[that is, f is equivalent to f(t)\]. In addition, block diagrams and program listings will frequently use the overdot notation to represent time derivatives. With this notation, each overdot represents a derivative. For example,
@@ -150,7 +121,6 @@ Often we will use Laplace transform notation and, for shorthand, drop the functi
 
 $$
 \dot{y} = \frac{dy}{dt},\quad \ddot{y} = \frac{d^2y}{dt^2},\quad \bar{y} = \frac{d^3y}{dt^3}
-
 $$
 
 Therefore, converting to the overdot notation yields
@@ -158,12 +128,10 @@ Therefore, converting to the overdot notation yields
 
 $$
 \frac{d^2e(t)}{dt^2} + 2\frac{de(t)}{dt}+e(t) = x(t) 
-
 $$
 
 $$
 \ddot{e}+2\dot{e}+e = x
-
 $$
 
 Occasionally, we shall either convert time functions to Laplace transforms or vice versa, by inspection. Some common transfer functions \[1\], along with their time domain equivalents, appear in Table 1.1. A more extensive listing of inverse Laplace transforms can be found in \[1\].
@@ -198,7 +166,6 @@ The second-order Runge–Kutta numerical integration procedure is easy to state.
 
 $$
 \dot{x} = f(x,t) 
-
 $$
 
 where `t` is time, we seek to find a recursive relationship for `x` as a function of time. With the second-order Runge–Kutta numerical technique, the value of `x` at the next integration interval h is given by
@@ -206,7 +173,6 @@ where `t` is time, we seek to find a recursive relationship for `x` as a functio
 
 $$
 x_{K+1} = x_K +\frac{hf(x,t)}{2}+\frac{hf(x,t+h)}{2}
-
 $$
 
 where the subscript K represents the last interval and K + 1 represents the new interval. From the preceding expression we can see that the new value of x is simply the old value of x plus a term proportional to the derivative evaluated at time t and another term with the derivative evaluated at time t + h.
@@ -221,7 +187,6 @@ To see how the Runge–Kutta technique can be applied to a practical example, le
 
 $$
 \frac{Y}{X} = \frac{\omega}{s^2+\omega^2}
-
 $$
 
 where X is the input, Y the output, $\omega$ the natural frequency of the second-order network, and s the Laplace transformation notation for a derivative. Cross multiplying the numerator and denominator of the transfer function and solving for the highest derivative, as was shown in the previous section, yields the following second-order differential equation:
@@ -230,7 +195,6 @@ where X is the input, Y the output, $\omega$ the natural frequency of the second
 
 $$
  \ddot{y} = \omega x -\omega^2y
-
 $$
 
 where the double overdot represents two differentiations.
@@ -238,7 +202,7 @@ where the double overdot represents two differentiations.
 
 <div align="cneter">
 
-![5aec9c0a9a296f5b5afca91a1ad8ac20.png](../_resources/5aec9c0a9a296f5b5afca91a1ad8ac20.png)
+![5aec9c0a9a296f5b5afca91a1ad8ac20.png](../_resources/5aec9c0a9a296f5b5afca91a1ad8ac20-1.png)
 
 Fig. 1.1 Block diagram representation of second-order system.
 图.1.1 二阶系统框图
@@ -256,7 +220,6 @@ If x is a step input in Fig. 1.1, we can find the response y exactly using Lapla
 
 $$
 Y(s) = \frac{\omega}{s(s^2+\omega^2)}
-
 $$
 
 Expanding the preceding expression using partial fraction expansion yields
@@ -264,7 +227,6 @@ Expanding the preceding expression using partial fraction expansion yields
 
 $$
 Y(s) = \frac{1}{\omega}[\frac{1}{s} - \frac{s}{s^2 + \omega^2}]
-
 $$
 
 The inverse Laplace transform of Y(s) produces y in the time domain or y(t). The output can be found by using Table 1.1 obtaining
@@ -272,7 +234,6 @@ The inverse Laplace transform of Y(s) produces y in the time domain or y(t). The
 
 $$
 y = \frac{1}{\omega}(1- cos\omega t)
-
 $$
 
 To check the preceding theoretical closed-form solution for y, a simulation involving numerical integration was written based on the system of Fig. 1.1. A simulation of the second-order system, using the second-order Runge–Kutta integration techniques, appears in Listing 1.1. We can see from the listing that the second-order differential equation, or derivative information, appears just before the FLAG=1 statement. We come to this code twice during the integration interval: once to evaluate the derivative at time t and once to evaluate the derivative at time t + h. We can also see from Listing 1.1 that every 0.01 s we print out the output along with the closed-form solution. In this particular example the natural frequency $\omega$ of the second-order system is 20 rad/s.
@@ -343,7 +304,7 @@ disp 'simulation finished'
 
 <div align="center">
 
-![b5be665b112f8d6e6236366713e9c884.png](../_resources/b5be665b112f8d6e6236366713e9c884.png)
+![b5be665b112f8d6e6236366713e9c884.png](../_resources/b5be665b112f8d6e6236366713e9c884-1.png)
 
 Fig. 1.2 Numerically integrating differential equations yields same results as closed-form solution.
 图.1.2 微分方程数值积分的解与闭式解
@@ -362,7 +323,6 @@ If we define F(z) as the Z transform of f (n), then the Z transform has the foll
 
 $$
 F(z) = \sum_{n= 0}^{ \infin}f(n)z^{-n}
-
 $$
 
 With this definition it is easy to show that a summation in the time or n domain is also a summation in the Z transform domain. For example, if $f_1 (n)$ and $f_2 (n)$ have Z transforms$F_1 (z)$and $F_2 (z)$, respectively, then
@@ -370,7 +330,6 @@ With this definition it is easy to show that a summation in the time or n domain
 
 $$
 Z[f_1(n) \pm f_2(n)] = F_1(z) \pm F_2(z)
-
 $$
 
 > 译者注：`和的Z变换`=`Z变换的和`
@@ -381,7 +340,6 @@ One can show that the Z transform of a signal at time n + 1 is a multiplication 
 
 $$
 Z(f_{n+1} )= zF(z)  -  zf(0)
-
 $$
 
 where f(0) is an initial condition. Often we will be working with systems having zero initial conditions.
@@ -392,7 +350,6 @@ A list of some common Z transforms can be found in Table 1.2. From the table we 
 
 $$
 t= nT_s
-
 $$
 
 <div align="center">
@@ -415,7 +372,6 @@ To illustrate how Z transforms can be used to solve difference equations, let us
 
 $$
 y_{n+1} = y_n +G(x_{n+1} - y_n)
-
 $$
 
 where y is the filter estimate or output, x *is* the filter input or measurement, and G the filter gain. For the first-order fading memory filter, the filter gain is a designer chosen number between zero and unity. We can find the filter response to a step input (that is, $x_{n+1} =1$) by observing from Table 1.2 that the Z transform of a unit step function or constant is given by
@@ -424,7 +380,6 @@ where y is the filter estimate or output, x *is* the filter input or measurement
 
 $$
 z(1) = z/(z-1)
-
 $$
 
 Therefore taking the Z transform of both sides of the difference equation yields
@@ -432,7 +387,6 @@ Therefore taking the Z transform of both sides of the difference equation yields
 
 $$
 zY = Y +G(\frac{z}{z-1}-Y)
-
 $$
 
 If we bring all the terms in Y to the left-hand side of the equation, we get
@@ -440,7 +394,6 @@ If we bring all the terms in Y to the left-hand side of the equation, we get
 
 $$
 Y(z-1+G) = Gz/(z-1)
-
 $$
 
 Solving for Y produces
@@ -448,7 +401,6 @@ Solving for Y produces
 
 $$
 Y=\frac{Gz}{(z-1)(z-a)}
-
 $$
 
 where
@@ -456,7 +408,6 @@ where
 
 $$
 a = 1-G
-
 $$
 
 Using a partial fraction expansion on the solution for Y yields
@@ -464,7 +415,6 @@ Using a partial fraction expansion on the solution for Y yields
 
 $$
 \frac{G}{(z-1)(z-a)} = \frac{G}{1-a}[\frac{1}{z-1}-\frac{1}{z-a}]
-
 $$
 
 Therefore by multiplying both sides of the preceding equation by z, we obtain
@@ -472,7 +422,6 @@ Therefore by multiplying both sides of the preceding equation by z, we obtain
 
 $$
 \frac{Gz}{(z-1)(z-a)} = \frac{G}{1-a}[\frac{z}{z-1}-\frac{z}{z-a}]
-
 $$
 
 Using Table 1.2 to find the inverse Z transform of the preceding expression yields
@@ -480,7 +429,6 @@ Using Table 1.2 to find the inverse Z transform of the preceding expression yiel
 
 $$
 y_n = \frac{G}{1-a}(1-a^n)
-
 $$
 
 Substitution of the value of a in the preceding expression yields the closed-form solution for y as
@@ -488,7 +436,6 @@ Substitution of the value of a in the preceding expression yields the closed-for
 
 $$
 y_n  = 1-(1-G)^n
-
 $$
 
 We now have an exact expression for the filter output as a function of the number of measurements n.To test the accuracy of the preceding closed-form solution for y, a simulation of the original difference equation was written and appears in Listing 1.2. We can see from the listing that unlike the previous simulation, numerical integration is not required. In this simulation we are simply solving the difference equation at each iteration of the “for loop” to get a new value for y. As we can see from the listing, the simulation solves the difference equation 20 times. The closed-form solution for y is also calculated at each iteration in order to check the validity of the simulation.
@@ -540,7 +487,7 @@ save datfil output -ascii
 disp 'simulation finished'
 ```
 
-![6ac8439950ee437fad2d1dc099957dc0.png](../_resources/6ac8439950ee437fad2d1dc099957dc0.png)
+![6ac8439950ee437fad2d1dc099957dc0.png](../_resources/6ac8439950ee437fad2d1dc099957dc0-1.png)
 
 <div align="center">Fig. 1.3 Difference equation simulations results agree with closed-form solution.
 

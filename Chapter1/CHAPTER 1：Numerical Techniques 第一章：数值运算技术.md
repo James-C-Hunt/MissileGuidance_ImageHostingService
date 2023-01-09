@@ -322,7 +322,7 @@ If we define F(z) as the Z transform of f (n), then the Z transform has the foll
 如果定义F(z)为f(n)的Z变换，则Z变换定义如下：
 
 $$
-F(z) = \sum_{n= 0}^{ \infin}f(n)z^{-n}
+F(z) = \sum_{n= 0}^{ \infty}f(n)z^{-n}
 $$
 
 With this definition it is easy to show that a summation in the time or n domain is also a summation in the Z transform domain. For example, if $f_1 (n)$ and $f_2 (n)$ have Z transforms$F_1 (z)$and $F_2 (z)$, respectively, then
